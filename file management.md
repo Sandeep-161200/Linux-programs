@@ -50,10 +50,9 @@ void main()
         printf("%s\n",buf);
         close(fd);
 }
-
-3. Implement a C program to create a new directory named "Test" in the current 
-directory?
-
+```
+## Implement a C program to create a new directory named "Test" in the current directory?
+```c
 #include<stdio.h>
 #include<sys/stat.h>
 #include<sys/types.h>
@@ -70,9 +69,9 @@ void main()
                 printf("error in creating the directory\n");
         }
 }
-
-4. Write a C program to check if a file named "sample.txt" exists in the current directory?
-
+```
+## Write a C program to check if a file named "sample.txt" exists in the current directory?
+```c
 #include<stdio.h>
 #include<unistd.h>
 void main()
@@ -87,9 +86,9 @@ void main()
                 printf("file is not existed\n");
         }
 }
-
-5. Develop a C program to rename a file from "oldname.txt" to "newname.txt"?
-
+```
+## Develop a C program to rename a file from "oldname.txt" to "newname.txt"?
+```c
 #include<stdio.h>
 void main()
 {
@@ -104,9 +103,9 @@ void main()
                 printf("failed to change the name of file\n");
         }
 }
-
-6. Implement a C program to delete a file named "delete_me.txt"? 
-
+```
+## Implement a C program to delete a file named "delete_me.txt"? 
+```c
 #include<stdio.h>
 void main()
 {
@@ -121,9 +120,9 @@ void main()
         }
 
 }
-
-7. Write a C program to copy the contents of one file to another? 
-
+```
+## Write a C program to copy the contents of one file to another? 
+```c
 #include<stdio.h>
 #include<fcntl.h>
 #include<unistd.h>
@@ -158,9 +157,9 @@ void main()
         close(fd2);
         printf("file copied\n");
 }
-
-8. Develop a C program to move a file from one directory to another?
-
+```
+## Develop a C program to move a file from one directory to another?
+```c
 #include<stdio.h>
 void main()
 {
@@ -175,9 +174,9 @@ void main()
                 printf("failed to move\n");
         }
 }
-
-9. Implement a C program to list all files in the current directory?
-
+```
+## Implement a C program to list all files in the current directory?
+```c
 #include<stdio.h>
 #include<unistd.h>
 void main()
@@ -196,10 +195,9 @@ void main()
         stat(file,&filestat);
         printf("the size of %s is %d bytes",file,filestat.st_size);
 }
-
-11. Develop a C program to check if a directory named "Test" exists in the current 
-directory? 
-
+```
+## Develop a C program to check if a directory named "Test" exists in the current directory? 
+```c
 #include<stdio.h>
 #include<sys/types.h>
 #include<sys/stat.h>
@@ -223,10 +221,9 @@ void main()
                 printf("%s directory not exists\n",file);
         }
 }
-
-12. Implement a C program to create a new directory named "Backup" in the parent 
-directory? 
-
+```
+## Implement a C program to create a new directory named "Backup" in the parent directory? 
+```c
 #include<stdio.h>
 #include<sys/stat.h>
 #include<sys/types.h>
@@ -243,9 +240,9 @@ void main()
         }
 
 }
-
-13. Write a C program to recursively list all files and directories in a given directory?
-
+```
+## Write a C program to recursively list all files and directories in a given directory?
+```c
 #include<stdio.h>
 #include<unistd.h>
 void main(int argc,char *argv[])
@@ -261,18 +258,18 @@ void main(int argc,char *argv[])
         }
         execlp("ls","ls","-R",path,NULL);
 }
-
-14. Develop a C program to delete all files in a directory named "Temp"? 
-
+```
+## Develop a C program to delete all files in a directory named "Temp"? 
+```c
 #include<stdio.h>
 #include<unistd.h>
 void main()
 {
         execlp("rm","rm","-rf","receive",NULL);
 }
-
-15. Implement a C program to count the number of lines in a file named "data.txt"?
-
+```
+## Implement a C program to count the number of lines in a file named "data.txt"?
+```c
 #include<stdio.h>
 #include<fcntl.h>
 #include<unistd.h>
@@ -300,10 +297,9 @@ void main()
         close(fd);
         printf("the number of lines are %d\n",linecount);
 }
-
-16. Write a C program to append "Goodbye!" to the end of an existing file named 
-"message.txt"? 
-
+```
+## Write a C program to append "Goodbye!" to the end of an existing file named "message.txt"? 
+```c
 #include<stdio.h>
 #include<unistd.h>
 #include<fcntl.h>
@@ -327,10 +323,9 @@ void main()
         close(fd);
         printf("message appended successfully\n");
 }
-
-17. Implement a C program to change the permissions of a file named "file.txt" to read
-only? 
-
+```
+## Implement a C program to change the permissions of a file named "file.txt" to read only? 
+```c
 #include<stdio.h>
 #include<sys/stat.h>
 void main()
@@ -345,10 +340,9 @@ void main()
                printf("failed to change the permissions\n");
        }
 }
-
-18. Write a C program to change the ownership of a file named "file.txt" to the user 
-"user1"? 
-
+```
+## Write a C program to change the ownership of a file named "file.txt" to the user "user1"? 
+```c
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
@@ -369,9 +363,9 @@ void main()
         chown(filename,uid,-1);
         printf("owner changed from %s to %s\n",filename,username);
 }
-
-19. Develop a C program to get the last modified timestamp of a file named "file.txt"? 
-
+```
+## Develop a C program to get the last modified timestamp of a file named "file.txt"? 
+```c
 #include<stdio.h>
 #include<time.h>
 #include<sys/stat.h>
@@ -382,9 +376,9 @@ void main()
         stat(filename,&filestat);
         printf("last modified of %s:%s\n",filename,ctime(&filestat.st_mtime));
 }
-
-20. Implement a C program to create a temporary file and write some data to it? 
-
+```
+## Implement a C program to create a temporary file and write some data to it? 
+```c
 #include<stdio.h>
 #include<fcntl.h>
 #include<stdlib.h>
@@ -410,4 +404,4 @@ void main()
         printf("data written to temporary file successfully\n");
         close(fd);
 }
-
+```
