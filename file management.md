@@ -1440,7 +1440,7 @@ int main()
 {
     struct stat st;
 
-    if (stat("pk.txt", &st) == -1)
+    if (stat("file.txt", &st) == -1)
     {
         perror("stat");
         return 1;
