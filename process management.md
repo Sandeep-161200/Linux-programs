@@ -49,8 +49,7 @@ void main()
         }
 }
 ```
-## Write a C program to create multiple child processes using fork() and display their 
-PIDs. 
+## Write a C program to create multiple child processes using fork() and display their PIDs. 
 ```c
 #include<stdio.h>
 #include<stdlib.h>
@@ -99,8 +98,7 @@ void main()
         }
 }
 ```
-## Write a C program to demonstrate the use of the waitpid() function for process 
-synchronization. 
+## Write a C program to demonstrate the use of the waitpid() function for process synchronization. 
 ```c
 #include<stdio.h>
 #include<sys/wait.h>
@@ -169,8 +167,7 @@ void main()
         }
 }
 ```
-## Write a C program to demonstrate the use of the system() function for executing shell 
-commands.
+## Write a C program to demonstrate the use of the system() function for executing shell commands.
 ```c
 #include<stdio.h>
 #include<stdlib.h>
@@ -179,8 +176,7 @@ void main()
         system("ls -l");
 }
 ```
-## Write a C program to create a process using fork() and pass arguments to the child 
-process.
+## Write a C program to create a process using fork() and pass arguments to the child process.
 ```c
 #include<stdio.h>
 #include<stdlib.h>
@@ -302,8 +298,7 @@ void main()
         }
 }
 ```
-## Write a program in C to demonstrate inter-process communication (IPC) using shared 
-memory.
+## Write a program in C to demonstrate inter-process communication (IPC) using shared memory.
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -358,8 +353,7 @@ void main()
         }
 }
 ```
-## Write a C program to create a pipeline between two processes using the pipe() system 
-call.
+## Write a C program to create a pipeline between two processes using the pipe() system call.
 ```c
 #include<stdio.h>
 #include<stdlib.h>
@@ -393,8 +387,7 @@ void main()
         wait(&status);
 }
 ```
-## Write a program in C to demonstrate the use of the nice() system call for adjusting 
-process priority
+## Write a program in C to demonstrate the use of the nice() system call for adjusting process priority
 ```c
 #include<stdio.h>
 #include<stdlib.h>
@@ -446,8 +439,7 @@ int main()
         return 0;
 }
 ```
-## Write a C program to create a child process using fork() and communicate between 
-parent and child using pipes.
+## Write a C program to create a child process using fork() and communicate between parent and child using pipes.
 ```c
 #include<stdio.h>
 #include<stdlib.h>
@@ -491,8 +483,7 @@ void main()
         wait(&status);
 }
 ```
-## Write a C program to demonstrate process synchronization using the fork() and wait() 
-system calls.
+## Write a C program to demonstrate process synchronization using the fork() and wait() system calls.
 ```c
 #include<stdio.h>
 #include<stdlib.h>
@@ -517,8 +508,7 @@ void main()
         }
 }
 ```
-## Write a C program to create a process using fork() and change its scheduling policy 
-using sched_setscheduler().
+## Write a C program to create a process using fork() and change its scheduling policy using sched_setscheduler().
 ```c
 #include<stdio.h>
 #include<stdlib.h>
@@ -548,8 +538,7 @@ void main()
         }
 }
 ```
-## Write a C program to create a child process using fork() and demonstrate inter-process 
-communication (IPC) using shared memory.
+## Write a C program to create a child process using fork() and demonstrate inter-process communication (IPC) using shared memory.
 ```c
 #include<stdio.h>
 #include<stdlib.h>
@@ -580,8 +569,7 @@ void main()
         }
 }
 ```
-## Write a C program to demonstrate the use of the prctl() system call to change process 
-attributes.
+## Write a C program to demonstrate the use of the prctl() system call to change process attributes.
 ```c
 #include<stdio.h>
 #include<stdlib.h>
@@ -600,8 +588,7 @@ void main()
         printf("process is running \n");
 }
 ```
-## Write a C program to create a child process using fork() and demonstrate process 
-synchronization using semaphores
+## Write a C program to create a child process using fork() and demonstrate process synchronization using semaphores
 ```c
 #include<stdio.h>
 #include<stdlib.h>
@@ -639,8 +626,7 @@ void main()
         }
 }
 ```
-## Write a C program to create a child process using fork() and demonstrate process 
-communication using message queues.
+## Write a C program to create a child process using fork() and demonstrate process communication using message queues.
 ```c
 #include<stdio.h>
 #include<stdlib.h>
@@ -676,8 +662,7 @@ void main()
         }
 }
 ```
-## Write a C program to create a child process using fork() and demonstrate process 
-communication using named pipes (FIFOs).
+## Write a C program to create a child process using fork() and demonstrate process communication using named pipes (FIFOs).
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -719,8 +704,7 @@ void main()
         }
 }
 ```
-## Write a C program to create a child process using fork() and demonstrate 
-process communication using shared memory and semaphores
+## Write a C program to create a child process using fork() and demonstrate process communication using shared memory and semaphores
 ```c 
 #include <stdio.h>
 #include <stdlib.h>
